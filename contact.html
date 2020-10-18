@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>Magsår</title>    
+    </head>
+    <style>
+        
+    </style>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <h1>Magsår</h1>
+                <hr>
+                <h3>"Jag är så stressad att jag får magsår"</h3>
+            </header>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="symptoms.html">Symtom</a></li>
+                    <li><a href="diagnosis.html">Diagnos</a></li>
+                    <li><a href="cause.html">Orsak</a></li>
+                    <li><a href="treatment.html">Behandling</a></li>
+                    <li><a href="contact.html" class="active">Kontakt</a></li>
+                </ul>
+            </nav>
+            <main class="main">
+                <h1>Kontakt</h1>
+                <h2>Kontaktformulär</h2>
+                <br>
+                <form id="form" name="form" method="post" action="http://www.olzzon.com/cgi-bin/p.cgi?epost=patrik.persson10@tele2.se&id=1">
+                    <fieldset class="form">
+                        <legend>Meddelande Direkt Till Magsårsläkaren</legend>
+                        <input type="hidden" name="form" value="Patientkontakt med Magsårsläkare">
+                        <label for="fnamn">Ditt Förnamn:</label>
+                        <br />
+                        <input type="text" name="fnamn" id="fnamn" />
+                        <br />
+                        <label for="enamn">Ditt Efternamn:</label>
+                        <br />
+                        <input type="text" name="enamn" id="enamn" />
+                        <br />
+                        <label for="epost">Din E-postadress:</label>
+                        <br />
+                        <input type="text" name="epost" id="epost" />
+                        <br />
+                        <label for="meddelande">Meddelande:</label>
+                        <br />
+                        <textarea name="meddelande" id="meddelande" cols="40" rows="5"></textarea>
+                        <br />
+                        <label for="skicka"></label>
+                        <input type="submit" name="skicka" id="skicka" value="Skicka meddelandet" />
+                    </fieldset>
+                </form>
+                <br />
+                <p class="paragraph_center">Karta till Vårdcentralen Gullviksborg</p>
+                <img src="pics/gullviksborgs_healt_center_map.PNG" class="img__size" alt="gullviksborgs healt center map">
+            </main>
+            <footer class="footer">
+                <div>Vårdcentralen Gullviksborg</div>
+                <div>Censorsgatan 1</div>
+                <div>040-623 46 00</div> 
+                <div>vardcentralen.gullviksborg@skane.se</div>
+            </footer>
+        </div>
+    </body>
+</html>

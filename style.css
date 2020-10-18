@@ -1,0 +1,166 @@
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  color: #6d745c; 
+}
+
+.wrapper {
+  font-family:'Open Sans';
+  font-size: 1.2em;
+  height: 100vh;
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+.wrapper > * {
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #6d745c;
+}
+
+nav li a:hover {
+  text-decoration: none;
+  color: #e4dec2;
+}
+
+.active {
+  color: #e4dec2;  
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  background-color: #f5f3e6;
+}
+
+.nav {
+  grid-area: nav;
+  font-size: 1.4em;
+  background-color: #d5c68d;
+}
+
+.main {
+  grid-area: main;
+  text-align: center;
+  background-color: #e4dec2;
+}
+
+.img__size {
+  width: 100%;
+}
+
+legend {
+  width: 100%;
+}
+
+.paragraph_left {
+  text-align: left;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  font-size: 0.8em;
+  background-color: #d5c68d;
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    font-size: 1em;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+      "header header header"
+      "nav nav nav"
+      "main main main"
+      "footer footer footer"
+  }
+
+  .nav {
+    padding: 0;
+    font-size: 1.4em;
+    text-align: center;  
+  }
+  
+  .img__size {
+    width: 98%;
+  }
+
+  textarea {
+    width: 98%;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+      "header  header"
+      "nav  nav"
+      "main  main"
+      "footer  footer";
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .img__size {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width:568px) {
+  .nav {
+    font-size: 1.2em;
+  }
+  
+  .paragraph_left {
+    padding: 10px;
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .img__size {
+    width: 80%;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 0.8em;
+  }
+
+  .form {
+    font-size: 1.1em;
+  }
+
+  .paragraph_center {
+    padding: 10px;
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .img__size {
+    width: 50%;
+  }
+
+  fieldset {
+    border: none;
+  }
+}
